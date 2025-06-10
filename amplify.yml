@@ -8,13 +8,10 @@ backend:
 frontend:
   phases:
     build:
-      commands:
-        - npm run build
+      commands: []
   artifacts:
-    baseDirectory: dist
+    baseDirectory: /
     files:
       - '**/*'
   cache:
-    paths:
-      - .npm/**/*
-      - node_modules/**/*
+    paths: []
